@@ -1,3 +1,30 @@
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 0.1em;
+  margin-block: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 100vw;
+
+  &:hover {
+    background: grey;
+  }
+}
+
+@supports (scrollbar-color: grey white) {
+  * {
+    scrollbar-color: grey white;
+    scrollbar-width: thin;
+    scroll-margin-block: 1em;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
